@@ -25,3 +25,13 @@ It is needed to create the tables at the measurements databases, for this use:
 ## Runserver
 
 After all previous configuration, run the server. For this you can execute `npm start` or `node index.js`
+
+# Server Routes
+
+This server have the following routes:
+
+GET 	`/api/product/`
+GET 	`/api/product/<productId>/`
+POST 	`/api/product/`
+PUT 	`/api/product/<productId>/`
+DELETE 	`/api/product/<productId>/`
