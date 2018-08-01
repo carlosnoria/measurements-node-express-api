@@ -31,7 +31,11 @@ After all previous configuration, run the server. For this you can execute `npm 
 This server have the following routes:
 
 GET 	`/api/product/`
+
 GET 	`/api/product/<productId>/`
+
 POST 	`/api/product/`
+
 PUT 	`/api/product/<productId>/`
+	
 DELETE 	`/api/product/<productId>/`
