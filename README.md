@@ -32,10 +32,10 @@ This server have the following routes:
 
 GET 	`/api/measure/`
 
-GET 	`/api/measure/<productId>/`
+GET 	`/api/measure/<measureId>/`
 
 POST 	`/api/measure/`
 
-PUT 	`/api/measure/<productId>/`
+PUT 	`/api/measure/<measureId>/`
 	
-DELETE 	`/api/measure/<productId>/`
+DELETE 	`/api/measure/<measureId>/`
