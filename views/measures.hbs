@@ -1,0 +1,30 @@
+<form id="savemeasure" method="post">
+  <input type="description" name="description" value="" placeholder="Descripcion de esta medida">
+  <br><br>
+  <input type="temperature" name="temperature" value="" placeholder="Temperatura">
+  <br><br>
+  <input type="humidity" name="humidity" value="" placeholder="Humedad">
+  <br><br>
+  <input type="height" name="height" value="" placeholder="Altura">
+  <br><br>
+  <input type="pressure" name="pressure" value="" placeholder="Presion">
+  <br><br>
+  <input type="submit" value="Guardar"
+</form>
+
+<script type="text/javascript">
+  const formLogin = document.querySelector("#savemeasure")
+  const formData = new FormData(formLogin)
+
+  formLogin.addEventListener('submit', event => {
+    console.log('HEY')
+  	event.preventDefault()
+  	fetch('/api/measure/', {
+  	  method: 'POST',
+  	  body: formData
+  	})
+  	.then(res => res.json())
+  	.then(data => console.log(data))
+  	console.log('HEY4')
+  })
+</script>

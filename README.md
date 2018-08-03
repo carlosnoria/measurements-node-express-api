@@ -30,12 +30,12 @@ After all previous configuration, run the server. For this you can execute `npm 
 
 This server have the following routes:
 
-GET 	`/api/product/`
+GET 	`/api/measure/`
 
-GET 	`/api/product/<productId>/`
+GET 	`/api/measure/<productId>/`
 
-POST 	`/api/product/`
+POST 	`/api/measure/`
 
-PUT 	`/api/product/<productId>/`
+PUT 	`/api/measure/<productId>/`
 	
-DELETE 	`/api/product/<productId>/`
+DELETE 	`/api/measure/<productId>/`

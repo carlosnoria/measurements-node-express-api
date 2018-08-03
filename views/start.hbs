@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  let measureList = document.createElement('ul')
+  
+  fetch('/api/measure', {
+  	method: 'GET',
+  })
+
+  .then(res => res.json())
+  .then(data => {
+  	data.map(measure => {
+  	  let text = document.createTextNode(`Medida: ${measure.description}| Temperatura: ${measure.temperature} | Humedad: ${measure.humidity}| Altura: ${measure.height} | Presion: ${measure.temperature}`)
+  	  let elem = document.createElement('li')
+  	  elem.appendChild(text)
+  	  measureList.appendChild(elem)
+  	})
+
+  	document.body.appendChild(measureList)
+  })
+</script>
